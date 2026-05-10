@@ -1,6 +1,6 @@
-Docker Day 2
+# Docker Day 2
 
-Docker Images
+## Docker Images
 Pulling images from Docker Hub
 Running real application (NGINX)
 Port mapping (Host vs Container)
@@ -8,13 +8,13 @@ Docker Image Concept
 
 A Docker image is a read-only template that contains:
 
-Operating system
+## Operating system
 Application software
 Required dependencies
 
 Images are used to create containers. A container is a running instance of an image.
 
-Commands Practiced
+## Commands Practiced
 
 Pull NGINX image
 
@@ -57,7 +57,7 @@ Browser request:
 
 http://localhost:8080
 
-Flow:
+## Flow:
 
 Browser sends request to host port 8080
 Docker forwards request to container port 80
