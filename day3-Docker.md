@@ -1,7 +1,7 @@
-Docker Day 3
+# Docker Day 3
 
 
-Topics Covered
+## Topics Covered
 Ephemeral nature of containers
 Data persistence in Docker
 Docker volumes
@@ -11,7 +11,7 @@ Container Data Behavior
 
 Containers are temporary (ephemeral). Any data created inside a container is lost when the container is removed.
 
-Example:
+## Example:
 
 Create a file inside a container
 Stop and remove the container
@@ -20,18 +20,18 @@ The file no longer exists
 
 This happens because containers do not store data permanently.
 
-Docker Volumes
+## Docker Volumes
 
 A Docker volume is a persistent storage mechanism managed by Docker. It allows data to remain even after containers are deleted.
 
-Commands Practiced
+## Commands Practiced
 
 Create a volume: docker volume create myvolume
 List volumes: docker volume ls
 Run container with volume: docker run -it -v myvolume:/data ubuntu bash
 
 
-Volume Mount Explanation
+## Volume Mount Explanation
 
 Command used:
 docker run -it -v myvolume:/data ubuntu bash
@@ -41,11 +41,11 @@ myvolume = volume on host (managed by Docker)
 
 This creates a connection between the Docker-managed volume and the container directory.
 
-Bind Mount
+## Bind Mount
 
 Bind mount connects a directory from the host system directly to the container.
 
-Command:
+## Command:
 
 docker run -it -v /home/mohan/data:/data ubuntu bash
 /home/mohan/data = directory on host
